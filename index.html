@@ -8,137 +8,137 @@
 <style>
     body {
         margin: 0;
-        font-family: Inter, sans-serif;
-        background: #f2f7ff;
+        font-family: "Poppins", sans-serif;
+        background: #f4f8ff;
     }
 
+    /* HEADER */
     .header {
-        background: linear-gradient(135deg, #1A73E8, #0F4BB6);
+        background: linear-gradient(135deg, #0e5eed, #063b9c);
         color: white;
-        padding: 20px 25px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom-left-radius: 18px;
-        border-bottom-right-radius: 18px;
+        padding: 35px 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     }
 
-    .header h2 {
+    .header h1 {
         margin: 0;
+        font-size: 28px;
+        font-weight: 600;
     }
 
+    .header p {
+        opacity: 0.85;
+        margin-top: 5px;
+    }
+
+    /* GRID */
     .container {
-        padding: 22px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
         gap: 22px;
+        padding: 25px;
     }
 
     .card {
         background: white;
-        padding: 20px;
-        border-radius: 15px;
-        box-shadow: 0px 6px 20px rgba(0,0,0,0.08);
+        border-radius: 18px;
+        padding: 22px;
+        box-shadow: 0px 4px 14px rgba(0,0,0,0.08);
+        transition: transform 0.2s;
     }
 
-    .card h3 {
-        margin-top: 0;
-        color: #0F4BB6;
+    .card:hover {
+        transform: translateY(-3px);
     }
 
     .metric {
-        font-size: 28px;
+        font-size: 30px;
         font-weight: 700;
-        color: #1A73E8;
+        color: #0e5eed;
+        margin: 10px 0;
     }
 
     .btn {
-        background: #1A73E8;
+        background: #0e5eed;
         color: white;
         padding: 10px 15px;
-        border-radius: 10px;
-        cursor: pointer;
-        text-align: center;
         display: inline-block;
-        margin-top: 10px;
+        border-radius: 10px;
         text-decoration: none;
+        margin-top: 12px;
+        font-size: 14px;
     }
 
     .nav {
-        background: #1A73E8;
-        padding: 12px;
         position: fixed;
         bottom: 0;
+        left: 0;
+        background: #0e5eed;
         width: 100%;
         display: flex;
         justify-content: space-around;
+        padding: 12px;
         color: white;
         font-weight: 600;
     }
 
     .nav a {
-        color: white;
         text-decoration: none;
-        cursor: pointer;
+        color: white;
+        font-size: 15px;
     }
-
 </style>
 
 </head>
-
 <body>
 
 <div class="header">
-    <h2>Hello, Ranveer 👋</h2>
-    <img src="https://i.imgur.com/7kCjF8O.png" width="40" style="border-radius:50%">
+    <h1>Welcome, Ranveer 👋</h1>
+    <p>Your personalised meal dashboard</p>
 </div>
 
 <div class="container">
 
     <div class="card">
-        <h3>Daily Meal Streak</h3>
-        <div class="metric">3 Days 🔥</div>
-        <p>Complete meals to maintain your streak.</p>
+        <h3>Meal Streak 🔥</h3>
+        <div class="metric">3 Days</div>
+        <p>Maintain your healthy meal streak.</p>
         <a class="btn" href="streak.html">View Streak</a>
     </div>
 
     <div class="card">
-        <h3>Wellness Points</h3>
+        <h3>Wellness Points ⭐</h3>
         <div class="metric">420 pts</div>
-        <p>Earn points for feedback, hygiene checks & streaks.</p>
-        <a class="btn" href="rewards.html">View Rewards</a>
+        <p>Earned from feedback & daily meals.</p>
+        <a class="btn" href="rewards.html">Rewards</a>
     </div>
 
     <div class="card">
-        <h3>Meal Credits</h3>
-        <div class="metric">12 credits</div>
-        <p>Unused meals convert automatically to credits.</p>
-        <a class="btn" href="credits.html">Redeem Credits</a>
+        <h3>Meal Credits 💳</h3>
+        <div class="metric">12 Credits</div>
+        <p>Unused meals auto-convert to credits.</p>
+        <a class="btn" href="credits.html">Use Credits</a>
     </div>
 
     <div class="card">
-        <h3>High Protein Meal</h3>
+        <h3>High Protein Meal 🍗</h3>
         <div class="metric">42g Protein</div>
-        <p>Today's Pick: Grilled Paneer Bowl.</p>
+        <p>Today's pick: Grilled Paneer Power Bowl.</p>
         <a class="btn" href="protein.html">View Meal</a>
     </div>
 
     <div class="card">
-        <h3>Plan Your Own Meal</h3>
-        <p>Customize meals based on protein, spice level, allergies.</p>
-        <a class="btn" href="planner.html">Build My Plate</a>
+        <h3>Build Your Plate 🍽️</h3>
+        <p>Customize meals based on your goals.</p>
+        <a class="btn" href="planner.html">Start</a>
     </div>
 
     <div class="card">
-        <h3>Feedback & Hygiene</h3>
-        <p>Rate today's meal & upload a hygiene picture.</p>
+        <h3>Feedback & Hygiene 📸</h3>
+        <p>Rate meals & upload kitchen hygiene photos.</p>
         <a class="btn" href="feedback.html">Give Feedback</a>
-    </div>
-
-    <div class="card">
-        <h3>Subscription Status</h3>
-        <p>Current Plan: Premium Monthly</p>
-        <a class="btn" href="subscription.html">Manage Plan</a>
     </div>
 
 </div>
@@ -153,3 +153,4 @@
 
 </body>
 </html>
+
